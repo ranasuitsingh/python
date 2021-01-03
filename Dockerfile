@@ -4,5 +4,5 @@ RUN zypper update -y && \
     zypper in -y python && \
     zypper in -y python-pip && \
     pip install selenium && \
-    zypper in -y firefox && \
+    zypper in -y firefox
 ENTRYPOINT sh
