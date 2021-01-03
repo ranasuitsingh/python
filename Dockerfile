@@ -1,4 +1,4 @@
-FROM
+FROM opensuse/leap
 RUN zypper update -y && \
     zypper in -y wget && \
     zypper in -y python && \
