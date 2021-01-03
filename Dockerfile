@@ -1,9 +1,8 @@
-FROM ubuntu
-RUN apt update && \
-    apt -y upgrade && \
-    apt -y install python python-pip && \
-    apt-get  update && \
-    apt install -y python-pip && \
-    apt install -y firefox && \
-    pip install selenium
+FROM
+RUN zypper update -y && \
+    zypper in -y wget && \
+    zypper in -y python && \
+    zypper in -y python-pip && \
+    pip install -y selenium && \
+    zypper in -y firefox && \
 ENTRYPOINT bash
